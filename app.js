@@ -9,4 +9,17 @@
     });
 
 
+    const options = {
+        rootMargin: '1000px 0px 0px 0px',
+        treshold: 0.5
+    };
+
+    const observe = entries => entries.forEach(entry => {
+        entry.target.classList.toggle('inviewport', entry.isIntersecting);
+    });
+
+    const obs = new IntersectionObserver(observe, options);
+    document.querySelectorAll('#grid>div').forEach(el => obs.observe(el));
+
+
 })();
