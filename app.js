@@ -8,7 +8,6 @@
         document.querySelector('#btn').classList.toggle('hidden');
     });
 
-
     const options = {
         rootMargin: '1000px 0px 0px 0px',
         treshold: 0.5

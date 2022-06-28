@@ -11,6 +11,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   --time: all 0.2s ease-out;
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 600px) {
@@ -244,6 +245,11 @@ section {
   margin: 6rem 0;
 }
 
+section>p {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 #intro>img {
   display: inline-block;
   width: 180px;
@@ -419,4 +425,8 @@ h2 {
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: 4rem;
+}
+
+#latest>p {
+  margin-bottom: 3rem;
 }
